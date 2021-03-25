@@ -1,10 +1,10 @@
 import React from "react";
 
-const Buttons = ({ currentIndex, id,transitionTo }) => {
+const Buttons = ({ dotIndex, id,transitionTo }) => {
   return (
     <div>
       <button
-        className={currentIndex === id ? "dots active" : "dots"}
+        className={dotIndex === id ? "dots active" : "dots"}
         onClick={() => {
           transitionTo(id, 1);
         }}
